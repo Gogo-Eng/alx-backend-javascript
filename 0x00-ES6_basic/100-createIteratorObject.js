@@ -4,5 +4,5 @@ export default function createIteratorObject(report) {
     theEmployees = [...theEmployees, ...departments];
   }
 
-  return theEmployees;
+  return theEmployees; // theEmployees[Symbol.iterator]();
 }
