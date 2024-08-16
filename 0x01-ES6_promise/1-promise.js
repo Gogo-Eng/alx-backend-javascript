@@ -3,7 +3,7 @@ export default function getFullResponseFromAPI(success) {
     status: 200,
     body: 'Success',
   };
-  const info = 'The fake API is not working curently';
+  const info = 'The fake API is not working currently';
   return new Promise((resolve, reject) => {
     if (success) {
       resolve(allStat);
