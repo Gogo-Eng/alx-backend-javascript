@@ -1,7 +1,7 @@
-import { uploadPhoto, createUser } from './utils';
+import * as utilsFunctions from './utils';
 
 export default function handleProfileSignup() {
-  return Promise.all([uploadPhoto(), createUser()])
+  return Promise.all([utilsFunctions.uploadPhoto(), utilsFunctions.createUser()])
     .then((response) => {
       const lint = response[0];
       const crew = response[1];
