@@ -7,7 +7,7 @@ export default function handleProfileSignup() {
       const crew = response[1];
       console.log(lint.body, crew.firstName, crew.lastName);
     })
-    .catch((error) => {
-      console.log('Signup system offline', error);
+    .catch(() => {
+      console.log('Signup system offline');
     });
 }
