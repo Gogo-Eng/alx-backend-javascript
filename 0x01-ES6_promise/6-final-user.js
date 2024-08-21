@@ -20,13 +20,14 @@ export default async function handleProfileSignup(firstname, lastname, filename)
 
   try {
     const upload = await uploadPhoto(filename);
-    const objResolved = {
+    const objectResolved = {
       status: 'fufilled',
       value: upload,
     };
-    arrray.push(objResolved);
+    arrray.push(objectResolved);
   } catch (error) {
     arrray.push({
+      status: 'rejected',
       value: error.toString(),
     });
   }
