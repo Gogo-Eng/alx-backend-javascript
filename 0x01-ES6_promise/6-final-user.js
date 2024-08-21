@@ -7,7 +7,7 @@ export default async function handleProfileSignup(firstname, lastname, filename)
   try {
     const signup = await signUpUser(firstname, lastname);
     const objResolved = {
-      status: 'resolved',
+      status: 'fufilled',
       value: signup,
     };
     arrray.push(objResolved);
@@ -21,7 +21,7 @@ export default async function handleProfileSignup(firstname, lastname, filename)
   try {
     const upload = await uploadPhoto(filename);
     const objResolved = {
-      status: 'resolved',
+      status: 'fufilled',
       value: upload,
     };
     arrray.push(objResolved);
