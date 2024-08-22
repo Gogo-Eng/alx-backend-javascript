@@ -10,6 +10,3 @@ export default function divideFunction(numerator, denominator) {
     console.log(error.message);
   }
 }
-
-const show = divideFunction(6, 90);
-console.log(show);
