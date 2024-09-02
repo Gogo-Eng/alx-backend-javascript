@@ -7,19 +7,20 @@ export default class Currency {
   get code() {
     return this._code;
   }
+
   set code(sign) {
     this._code = sign;
   }
 
   get name() {
-    return this_.name;
+    return this._name;
   }
+
   set name(money) {
     this._name = money;
   }
 
-
   displayFullCurrency() {
-    return(`${this._name} (${this._code})`)
+    return (`${this._name} (${this._code})`);
   }
 }
