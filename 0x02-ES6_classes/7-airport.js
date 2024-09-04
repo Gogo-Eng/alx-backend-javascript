@@ -5,6 +5,7 @@ export default class Airport {
   }
 
   get [Symbol.toStringTag]() {
-    return this._code;
+    // eslint-disable-next-line max-len
+    return this._code; // returning the airport's code (stored in _code) as the tag for the Object.prototype.toString() method
   }
 }
