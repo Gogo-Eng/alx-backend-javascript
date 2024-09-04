@@ -9,3 +9,15 @@ export default class Car {
     return new this.constructor();
   }
 }
+
+/*
+  static get [Symbol.species]() {
+    return this;
+  }
+
+  cloneCar() {
+    const Species = this.constructor[Symbol.species];
+
+    return new Species();
+  }
+*/
