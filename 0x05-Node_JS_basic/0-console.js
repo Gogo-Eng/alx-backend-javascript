@@ -1,4 +1,9 @@
-/* eslint-disable require-jsdoc */
+/**
+ * Displays a message on the STDOUT.
+ * The message to display.
+ */
+const displayMessage = (msg) => {
+  console.log(msg);
+};
 
-const displayMessage = (text) => console.log(⁠`${text}`);
 module.exports = displayMessage;
