@@ -1,16 +1,8 @@
-const {describe, it} = require("mocha");
-const sinon = require("sinon");
-const sendPaymentRequestToApi = require("./3-payment");
 const Utils = require("./utils");
-const assert = require("assert");
 
-describe("sendPaymentRequestToApi", function() {
-    it("check that Utils.calculateNumber was called once", function() {
-	const spy = sinon.spy(Utils, "calculateNumber");
+function sendPaymentRequestToApi(totalAmount, totalShipping) {
+    const result = Utils.calculateNumber("SUM", totalAmount, totalShipping);
+    console.log(`The total is: ${result}`);
+}
 
-	sendPaymentRequestToApi(50, 24.52);
-
-	assert(spy.calledOnce);
-	spy.restore();
-    });
-});
+module.exports = sendPaymentRequestToApi;
